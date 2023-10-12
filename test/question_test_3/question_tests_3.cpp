@@ -10,3 +10,10 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("test the question"){
+	REQUIRE(get_fib_sequence(5) == 5);
+	REQUIRE(get_fib_sequence(7) == 13);
+	REQUIRE(get_fib_sequence(10) == 55);
+	REQUIRE(get_fib_sequence(12) == 144);
+}

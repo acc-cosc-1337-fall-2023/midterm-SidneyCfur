@@ -10,3 +10,11 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("Test question one"){
+	REQUIRE(decimal_to_hex(1) == "1");
+	REQUIRE(decimal_to_hex(10) == "A");
+	REQUIRE(decimal_to_hex(170) == "AA");
+	REQUIRE(decimal_to_hex(255) == "FF");
+	REQUIRE(decimal_to_hex(512) == "200");
+}
